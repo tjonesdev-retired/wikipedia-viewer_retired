@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Wikipedia Viewer</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Barrio|Economica|Fredoka+One|Quicksand" rel="stylesheet">
+
+<!-- HEADER -->
+<div id="header">
+  <!-- refreshes page on click -->
+  <h1><a href="javascript:window.location.href=window.location.href">Wikipedia Viewer</a></h1>
+</div>
+
+<!-- SEARCHBAR -->
+<p id="clickTo" class="staticText">Click To</p>
+<div id="searchDiv">
+  <form>
+    <input id="searchBar" type="text" name="search" maxlength="300">
+    <p id="searchLine">\</p>
+    <i id="remove" class="fa fa-times-circle"></i>
+    <input id="submit" type="submit" style="display: none"></input>
+  </form>
+</div>
+<p class="staticText">Search</p>
+
+<hr>
+
+<!-- "RANDOM" BUTTON -->
+<div id="randomDiv">
+  <button id="random" class="btn"><i class="fa fa-random"></i> Random Wiki</button>
+</div>
+
+<!-- SEARCH INFO & RESULTS -->
+<div id="searchInfo"></div>
+<ul id="searchResults">
+</ul>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
